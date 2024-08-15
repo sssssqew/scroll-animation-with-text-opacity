@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body, html{
+    background-color: #0e0e10;
+    color: #fff;
+}
+
+header{
+    /* border: 1px solid red; */
+    position: relative;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+p{
+    margin-bottom: 4rem;
+    /* 아무리 작아도 20px 이고 일반적으로 브라우저 너비가 증가할수록 글자가 5vw 이므로 커지다가 70px 에 도달하면 더이상 커지지 않음 */ 
+    font-size: clamp(20px, 5vw, 70px); /* 글자크기 제한 : min, normal, max - 아무리 커도 40px */
+    padding: 0 5%;
+}
+span{
+    opacity: .1;
+}
+#bottom{
+    margin-bottom: 100vh;
+}
